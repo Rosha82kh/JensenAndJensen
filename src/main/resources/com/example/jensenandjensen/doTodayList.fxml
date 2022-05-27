@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #38b6ff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jensenandjensen.doTodayList">
+   <children>
+      <TextField fx:id="list_txt" layoutX="417.0" layoutY="427.0" prefHeight="26.0" prefWidth="362.0" promptText="What do you want to do today?" />
+      <Pane layoutY="3.0" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="223.0" layoutX="50.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../jensenLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="433.0" layoutY="483.0" mnemonicParsing="false" onAction="#addToDoList" prefHeight="35.0" prefWidth="150.0" text="Add" textFill="#38b6ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="606.0" layoutY="483.0" mnemonicParsing="false" onAction="#clearToDoList" prefHeight="35.0" prefWidth="150.0" text="Delete" textFill="#38b6ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="59.0" prefHeight="40.0" prefWidth="362.0" text="Create Do-Today List" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list_area" layoutX="414.0" layoutY="118.0" prefHeight="298.0" prefWidth="362.0" />
+      <Button layoutX="606.0" layoutY="538.0" mnemonicParsing="false" onAction="#backToMainPage" prefHeight="35.0" prefWidth="150.0" text="Back" textFill="#38b6ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="433.0" layoutY="540.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Add to Pomodore" textFill="#38b6ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
